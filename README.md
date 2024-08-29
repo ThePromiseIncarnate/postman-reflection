@@ -40,3 +40,18 @@ Rayquaza has one Ability, Air Lock. Rayquaza is a dual Dragon/Flying type Pokemo
 - Special Attack: 150
 - Special Defense: 90
 - Speed: 95
+
+## Exploring the Weather API
+
+![Failed Attempt At Weather API](img/weatherFailure.png)
+
+I got a status code of 200, meaning that everything was okay, but I used the wrong link, so instead of GETting the data for the city I was looking for, it gave me the HTML of the page.
+
+Oops.
+
+![Shreveport Weather](img/weatherShreveport.png)
+
+http://api.weatherbit.io/v2.0/current?key=4d8e0d0606654f008fbd84ed49c7604f&city=Shreveport,Louisiana
+
+I got another status code of 200, meaning that everything was okay. The current temperature in Shreveport, Lousisiana as of this GET request is 34.2 °C, the weather description says "overcast clouds", and this city is in the American/Chicago timezone. 
+
